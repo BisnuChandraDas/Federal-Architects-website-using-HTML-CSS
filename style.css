@@ -24,6 +24,14 @@
   border-radius: 5px;
 }
 
+main{
+max-width: 1200px;
+  margin: 0 auto;
+}
+
+main>section{
+  margin-top: 130px;
+}
 /* header style  */
 .text-gray{
   color: #424242;
@@ -34,6 +42,9 @@
 }
 .bg-light{
   background-color: rgba(255, 144, 14, 0.1);
+}
+.text-primary{
+  color: #ff900e;
 }
 
 /* navber releted stye  */
@@ -77,4 +88,52 @@
 .banner-image{
   width: 100%;
 }
+/* team fetural releted design */
 
+.teams{
+align-items: center;
+}
+.team-image-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.our-features{
+  margin-left: 130px;
+  max-width: 530px;
+}
+.feature-title{
+  font-size: 2.8rem;
+ 
+
+}
+
+#quick-list{
+  font-weight: 400;
+  font-size: 45px;
+}
+/* Resposive Media Query */
+@media  screen and (max-width:576px){
+  
+  .navbar, .nav-link, .teams{
+    flex-direction: column;
+  
+  }
+  .team-image-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .our-features{
+  margin-left: 20px;
+  }
+
+} 
+/* mediam size device */
+@media screen  and (min-width: 576px) and(max-width: 992px){
+  .teams{
+    flex-direction: column;
+  }
+.our-features{
+  margin-left: 50px auto;
+  }
+  
+}
